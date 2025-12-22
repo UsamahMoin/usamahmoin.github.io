@@ -3,9 +3,344 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
+    <title>Usamah Moin Mohammed | Portfolio</title>
+    <meta name="description" content="Usamah Moin Mohammed — Computer Science Lecturer and software developer. Resume, experience, skills, and education.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --ink: #1e2429;
+        --muted: #5a6872;
+        --paper: #f5f1ea;
+        --accent: #c45a1d;
+        --accent-soft: #f0d7c6;
+        --card: #ffffff;
+        --rule: rgba(30, 36, 41, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(196, 90, 29, 0.08), transparent 60%),
+          radial-gradient(circle at 20% 80%, rgba(30, 36, 41, 0.08), transparent 50%),
+          var(--paper);
+        font-family: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+        line-height: 1.6;
+      }
+
+      header {
+        padding: 72px 20px 40px;
+      }
+
+      .wrap {
+        max-width: 1040px;
+        margin: 0 auto;
+      }
+
+      .hero {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: minmax(0, 2.2fr) minmax(0, 1fr);
+        align-items: end;
+      }
+
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--muted);
+      }
+
+      h1 {
+        font-family: "Fraunces", "Georgia", serif;
+        font-weight: 700;
+        font-size: clamp(2.5rem, 3vw + 1rem, 4rem);
+        margin: 12px 0 8px;
+      }
+
+      .subtitle {
+        color: var(--muted);
+        font-size: 1.05rem;
+        margin: 0;
+        max-width: 520px;
+      }
+
+      .contact-card {
+        background: var(--card);
+        border-radius: 18px;
+        padding: 20px 22px;
+        border: 1px solid var(--rule);
+        box-shadow: 0 20px 45px rgba(30, 36, 41, 0.08);
+      }
+
+      .contact-card p {
+        margin: 6px 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .contact-card a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      main {
+        padding: 0 20px 70px;
+      }
+
+      section {
+        margin-top: 36px;
+        padding: 28px;
+        border-radius: 20px;
+        background: var(--card);
+        border: 1px solid var(--rule);
+      }
+
+      section h2 {
+        font-family: "Fraunces", "Georgia", serif;
+        font-size: 1.7rem;
+        margin: 0 0 14px;
+      }
+
+      .grid-two {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      }
+
+      .pill {
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--ink);
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+
+      ul {
+        margin: 12px 0 0;
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      .role {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-bottom: 14px;
+      }
+
+      .role h3 {
+        margin: 0;
+        font-size: 1.1rem;
+      }
+
+      .role span {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .skills-list {
+        display: grid;
+        gap: 16px;
+      }
+
+      .skill-block {
+        padding: 16px;
+        border-radius: 16px;
+        background: #fbfaf8;
+        border: 1px solid rgba(30, 36, 41, 0.08);
+      }
+
+      .skill-block strong {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 0.95rem;
+      }
+
+      footer {
+        padding: 20px;
+        color: var(--muted);
+        text-align: center;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 860px) {
+        .hero {
+          grid-template-columns: 1fr;
+        }
+
+        header {
+          padding-top: 56px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <header>
+      <div class="wrap hero">
+        <div>
+          <div class="eyebrow">Portfolio</div>
+          <h1>Usamah Moin Mohammed</h1>
+          <p class="subtitle">
+            Computer Science Lecturer and software developer focused on automation, enterprise systems, and
+            applied AI with measurable outcomes.
+          </p>
+        </div>
+        <div class="contact-card">
+          <p>823 Southwest Blvd Apt L</p>
+          <p>Jefferson City, Missouri 65109</p>
+          <p><a href="tel:9454449979">945-444-9979</a></p>
+          <p><a href="mailto:uxm0937@mavs.uta.edu">uxm0937@mavs.uta.edu</a></p>
+          <p><a href="https://www.linkedin.com/in/usamahmoinmohammed/" target="_blank" rel="noreferrer">LinkedIn</a></p>
+          <p><a href="https://github.com/UsamahMoin" target="_blank" rel="noreferrer">GitHub</a></p>
+          <p><a href="https://medium.com/@usamahmoin" target="_blank" rel="noreferrer">Medium</a></p>
+          <p><a href="articles.html" rel="noreferrer">Articles</a></p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrap">
+        <section>
+          <h2>Skills</h2>
+          <div class="skills-list">
+            <div class="skill-block">
+              <strong>Technical & Functional Expertise</strong>
+              Process Automation, Workflow Optimization, ERP Implementation, System Integration
+            </div>
+            <div class="skill-block">
+              <strong>ERP & Business Central</strong>
+              Microsoft Dynamics 365 Business Central, Business Intelligence & Reporting
+            </div>
+            <div class="skill-block">
+              <strong>Languages</strong>
+              Java, Python, C#, Shell Scripting
+            </div>
+            <div class="skill-block">
+              <strong>Database</strong>
+              MySQL, MongoDB, Redis
+            </div>
+            <div class="skill-block">
+              <strong>Other Tools</strong>
+              JIRA, Git, ServiceNow, Office 365
+            </div>
+            <div class="skill-block">
+              <strong>Backend Development</strong>
+              Node.js, Express.js, RESTful API Development
+            </div>
+            <div class="skill-block">
+              <strong>CMS</strong>
+              WordPress, Sitecore
+            </div>
+            <div class="skill-block">
+              <strong>Testing</strong>
+              Selenium, Postman, JUnit
+            </div>
+            <div class="skill-block">
+              <strong>Data Visualization</strong>
+              Power BI, Excel
+            </div>
+            <div class="skill-block">
+              <strong>SEO & Web Optimization</strong>
+              Metadata structuring, lazy loading, image compression, broken link audits
+            </div>
+            <div class="skill-block">
+              <strong>Development Practices</strong>
+              Agile, Scrum, TDD, CI/CD
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Experience</h2>
+          <div class="role">
+            <span class="pill">January 2025 – Present</span>
+            <h3>Computer Science Lecturer | Lincoln University</h3>
+          </div>
+          <ul>
+            <li>Designed and delivered courses on AI, Database Systems, and Algorithms with a focus on real-world business applications.</li>
+            <li>Integrated case studies and workflow automation tools into coursework to align with industry needs.</li>
+            <li>Developed interactive learning modules, improving student engagement.</li>
+          </ul>
+
+          <div class="role">
+            <span class="pill">Nov 2022 – Jan 2025</span>
+            <h3>Web Development & AI Research | University of Texas at Arlington</h3>
+          </div>
+          <ul>
+            <li>Advanced from Student Assistant to Web Software Specialist-I, contributing to accessibility, AI research, and enterprise web projects.</li>
+            <li>Audited and remediated 13,000+ pages across 800+ sites, enhancing accessibility, SEO, and performance.</li>
+            <li>Built AI Security and Explainable AI (XAI) labs, automating workflows and benchmarking model performance.</li>
+            <li>Researched AI analytics and business intelligence tools, covering data preprocessing, training, and evaluation.</li>
+            <li>Delivered CMS training and technical support to faculty and staff, streamlining web governance and content workflows.</li>
+          </ul>
+
+          <div class="role">
+            <span class="pill">January 2021 – June 2022</span>
+            <h3>Systems Engineer, Software Developer | Infosys</h3>
+          </div>
+          <ul>
+            <li>Developed and maintained backend services in C++ for financial applications, handling high-volume transactions generating $11.5M in revenue monthly.</li>
+            <li>Implemented ETL processes using Python and SQL, improving data accuracy and reducing processing times by 15%.</li>
+            <li>Created dynamic dashboards for tracking key performance indicators, giving stakeholders real-time insights.</li>
+            <li>Led the migration of data and services to Oracle Cloud, increasing scalability and performance across distributed servers.</li>
+            <li>Collaborated with senior management to present performance analytics and operational efficiencies.</li>
+          </ul>
+
+          <div class="role">
+            <span class="pill">April 2019 – November 2020</span>
+            <h3>Software Developer Engineer | Winning Edge Labs</h3>
+          </div>
+          <ul>
+            <li>Performed data cleaning, preparation, and validation to prepare datasets for analysis.</li>
+            <li>Conducted end-to-end testing using Selenium and Postman, verifying application functionality and performance.</li>
+            <li>Optimized database queries in MySQL to improve data retrieval efficiency by 15%.</li>
+            <li>Utilized advanced Excel functions, including VLOOKUP, to analyze data and generate over five detailed reports weekly.</li>
+          </ul>
+        </section>
+
+        <section class="grid-two">
+          <div>
+            <h2>Education</h2>
+            <div class="role">
+              <span class="pill">August 2022 – May 2024</span>
+              <h3>M.S. Computer Science | University of Texas at Arlington</h3>
+              <span>CGPA: 4.00</span>
+            </div>
+            <div class="role">
+              <span class="pill">July 2016 – September 2020</span>
+              <h3>B.E. Information Technology | Osmania University</h3>
+              <span>CGPA: 8.39</span>
+            </div>
+          </div>
+          <div>
+            <h2>Awards & Certifications</h2>
+            <ul>
+              <li>Maverick Advantage Distinction — recognized for leadership, research, and global engagement at UTA.</li>
+              <li>Infosys Performance Awards — received two awards for exceptional contributions.</li>
+              <li>Power BI and OCI Gen AI Certified.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      Built with focus on outcomes, clarity, and modern enterprise impact.
+    </footer>
   </body>
 </html>
