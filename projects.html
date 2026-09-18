@@ -1,155 +1,427 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Projects | Usamah Moin Mohammed</title>
-    <meta name="description" content="Selected projects by Usamah Moin Mohammed.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <style>
-      :root {
-        --ink: #1e2429;
-        --muted: #5a6872;
-        --paper: #f5f1ea;
-        --accent: #c45a1d;
-        --accent-soft: #f0d7c6;
-        --card: #ffffff;
-        --rule: rgba(30, 36, 41, 0.12);
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at top left, rgba(196, 90, 29, 0.08), transparent 60%),
-          radial-gradient(circle at 20% 80%, rgba(30, 36, 41, 0.08), transparent 50%),
-          var(--paper);
-        font-family: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
-        line-height: 1.6;
-      }
-
-      header {
-        padding: 64px 20px 30px;
-      }
-
-      .wrap {
-        max-width: 1040px;
-        margin: 0 auto;
-      }
-
-      h1 {
-        font-family: "Fraunces", "Georgia", serif;
-        font-weight: 700;
-        font-size: clamp(2.2rem, 2.6vw + 1rem, 3.4rem);
-        margin: 0 0 8px;
-      }
-
-      .subtitle {
-        color: var(--muted);
-        max-width: 540px;
-        margin: 0;
-      }
-
-      .nav {
-        margin-top: 18px;
-        display: inline-flex;
-        gap: 12px;
-        align-items: center;
-      }
-
-      .nav a {
-        text-decoration: none;
-        color: var(--accent);
-        font-weight: 600;
-      }
-
-      main {
-        padding: 0 20px 70px;
-      }
-
-      .projects {
-        margin-top: 24px;
-        display: grid;
-        gap: 18px;
-      }
-
-      .card {
-        background: var(--card);
-        border-radius: 18px;
-        padding: 22px;
-        border: 1px solid var(--rule);
-        box-shadow: 0 18px 40px rgba(30, 36, 41, 0.08);
-      }
-
-      .card h2 {
-        font-family: "Fraunces", "Georgia", serif;
-        font-size: 1.3rem;
-        margin: 0 0 6px;
-      }
-
-      .card p {
-        margin: 0 0 10px;
-        color: var(--muted);
-      }
-
-      .pill {
-        display: inline-block;
-        padding: 6px 12px;
-        border-radius: 999px;
-        background: var(--accent-soft);
-        color: var(--ink);
-        font-size: 0.85rem;
-        font-weight: 600;
-        letter-spacing: 0.02em;
-        margin-bottom: 10px;
-      }
-
-      .card a {
-        color: var(--accent);
-        text-decoration: none;
-        font-weight: 600;
-      }
-
-      footer {
-        padding: 20px;
-        color: var(--muted);
-        text-align: center;
-        font-size: 0.9rem;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="wrap">
-        <h1>Projects</h1>
-        <p class="subtitle">
-          Selected work in AI research, enterprise automation, and performance-focused web engineering.
-        </p>
-        <div class="nav">
-          <a href="index.html">Back to portfolio</a>
-          <span>•</span>
-          <a href="articles.html">Articles</a>
-        </div>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="#f5f4ef" name="theme-color"/>
+  <title>
+   Projects | Usamah Moin Mohammed
+  </title>
+  <meta content="Projects in applied AI, evaluation, product design, and interactive computer science visualizations." name="description"/>
+  <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link href="styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <a class="skip-link" href="#main">
+   Skip to content
+  </a>
+  <header class="site-header wrap">
+   <a aria-label="Usamah Moin Mohammed, home" class="wordmark" href="index.html">um<span>.</span></a>
+   <nav aria-label="Main navigation">
+    <a href="index.html#work">
+     Selected work
+    </a>
+    <a href="index.html#about">
+     About
+    </a>
+    <a href="articles.html">
+     Writing
+    </a>
+    <a class="nav-contact" href="mailto:uxm0937@mavs.uta.edu">
+     Get in touch
+     <span aria-hidden="true">
+      ↗
+     </span>
+    </a>
+   </nav>
+  </header>
+  <main class="wrap" id="main">
+   <section class="page-intro">
+    <p class="eyebrow">
+     PROJECT INDEX
+    </p>
+    <h1>
+     From idea
+     <br/>
+     to interaction.
+    </h1>
+    <p>
+     Software, prototypes, and experiments you can explore.
+    </p>
+   </section>
+   <section aria-labelledby="featured-title">
+    <h2 class="sr-only" id="featured-title">
+     Featured projects
+    </h2>
+    <div class="project-grid">
+     <article class="project-card">
+      <div class="lab-visual">
+       <span class="visual-label">
+        EVALUATION WORKFLOW
+       </span>
+       <div class="pipeline">
+        <span>
+         Benchmark cases
+        </span>
+        <span>
+         Model responses
+        </span>
+        <span>
+         Deterministic checks
+        </span>
+       </div>
+       <div class="visual-bottom">
+        <span>
+         Compare runs
+        </span>
+        <span>
+         Failure analysis
+        </span>
+       </div>
       </div>
-    </header>
-
-    <main>
-      <div class="wrap projects">
-        <div class="card">
-          <h2>Projects coming soon</h2>
-          <p>New case studies and links will be added here.</p>
-        </div>
+      <div class="project-body">
+       <div class="project-meta">
+        <span>
+         01 / evaluation
+        </span>
+        <span>
+         Source &amp; documentation
+        </span>
+       </div>
+       <h3>
+        Local LLM Lab
+       </h3>
+       <p class="project-hook">
+        Know what changed. Know what broke.
+       </p>
+       <p>
+        A local evaluation workbench for comparing models, inspecting failures, and catching regressions before accepting a model or prompt change.
+       </p>
+       <p class="tech">
+        Python · Ollama · Streamlit
+       </p>
+       <a class="text-link" href="https://github.com/UsamahMoin/Model-Evaluation">
+        Explore repository
+        <span aria-hidden="true">
+         ↗
+        </span>
+        <span class="sr-only">
+         : Local LLM Lab
+        </span>
+       </a>
       </div>
-    </main>
-
-    <footer>
-      More detailed case studies available on request.
-    </footer>
-  </body>
+     </article>
+     <article class="project-card">
+      <div class="design-visual">
+       <span class="visual-label">
+        INTERACTIVE PRODUCT CONCEPTS
+       </span>
+       <div class="type-composition">
+        <span class="type-serif">
+         Aa
+        </span>
+        <span class="type-outline">
+         ↗
+        </span>
+       </div>
+       <div class="visual-bottom">
+        <span>
+         Form meets function.
+        </span>
+        <div class="swatches">
+         <i>
+         </i>
+         <i>
+         </i>
+         <i>
+         </i>
+        </div>
+       </div>
+      </div>
+      <div class="project-body">
+       <div class="project-meta">
+        <span>
+         02 / design
+        </span>
+        <span>
+         Live experience
+        </span>
+       </div>
+       <h3>
+        UI/UX Portfolio
+       </h3>
+       <p class="project-hook">
+        Ideas you can click through.
+       </p>
+       <p>
+        Interactive product concepts exploring visual design, everyday workflows, and the details that make an interface feel considered.
+       </p>
+       <p class="tech">
+        Interaction design · React · TypeScript
+       </p>
+       <a class="text-link" href="https://usamahmoin.github.io/UI-UX/">
+        Open live portfolio
+        <span aria-hidden="true">
+         ↗
+        </span>
+        <span class="sr-only">
+         : UI/UX Portfolio
+        </span>
+       </a>
+      </div>
+     </article>
+     <article class="project-card">
+      <div class="sql-visual">
+       <span class="visual-label">
+        QUERY VALIDATION
+       </span>
+       <div class="query">
+        <span>
+         SELECT
+        </span>
+        insight
+        <br/>
+        <span>
+         FROM
+        </span>
+        your_data;
+       </div>
+       <div class="visual-bottom">
+        <span>
+         SELECT-only
+        </span>
+        <span>
+         Read-only execution
+        </span>
+       </div>
+      </div>
+      <div class="project-body">
+       <div class="project-meta">
+        <span>
+         03 / safety
+        </span>
+        <span>
+         Source &amp; documentation
+        </span>
+       </div>
+       <h3>
+        Safe SQL Analyst
+       </h3>
+       <p class="project-hook">
+        Ask a question. Keep the guardrails.
+       </p>
+       <p>
+        Business questions become structured SQL proposals, checked against deterministic rules before execution on a read-only SQLite database.
+       </p>
+       <p class="tech">
+        FastAPI · SQLGlot · SQLite
+       </p>
+       <a class="text-link" href="https://github.com/UsamahMoin/Agent-FF">
+        Explore repository
+        <span aria-hidden="true">
+         ↗
+        </span>
+        <span class="sr-only">
+         : Safe SQL Analyst
+        </span>
+       </a>
+      </div>
+     </article>
+     <article class="project-card">
+      <div class="enterprise-visual">
+       <span class="visual-label">
+        GOVERNED WORKFLOWS · PROTOTYPE
+       </span>
+       <div class="workflow">
+        <span>
+         Policy checks
+        </span>
+        <b>
+         →
+        </b>
+        <span>
+         Generation
+        </span>
+        <b>
+         →
+        </b>
+        <span>
+         Review
+        </span>
+       </div>
+       <div class="visual-bottom">
+        <span>
+         Quality. Cost. Adoption.
+        </span>
+        <span>
+         Human oversight
+        </span>
+       </div>
+      </div>
+      <div class="project-body">
+       <div class="project-meta">
+        <span>
+         04 / enterprise
+        </span>
+        <span>
+         Source &amp; documentation
+        </span>
+       </div>
+       <h3>
+        Enterprise AI Enablement Lab
+       </h3>
+       <p class="project-hook">
+        Useful AI needs more than access.
+       </p>
+       <p>
+        A prototype for approved workflows, policy checks, layered evaluation, and human review, with analytics for adoption, quality, and cost.
+       </p>
+       <p class="tech">
+        Next.js · FastAPI · PostgreSQL
+       </p>
+       <a class="text-link" href="https://github.com/UsamahMoin/Enterprise-AI-Enablement-Evaluation-Platform">
+        Explore repository
+        <span aria-hidden="true">
+         ↗
+        </span>
+        <span class="sr-only">
+         : Enterprise AI Enablement Lab
+        </span>
+       </a>
+      </div>
+     </article>
+    </div>
+   </section>
+   <section class="experiments">
+    <div class="section-heading">
+     <div>
+      <p class="eyebrow">
+       LEARN BY EXPLORING
+      </p>
+      <h2>
+       Interactive experiments.
+      </h2>
+     </div>
+     <p>
+      Open a visualization and try it yourself.
+     </p>
+    </div>
+    <a class="experiment" href="https://usamahmoin.github.io/K-Means-Cluster-Explorer/">
+     <div>
+      <h3>
+       K-Means Cluster Explorer
+      </h3>
+      <p>
+       Explore how data points form clusters.
+      </p>
+     </div>
+     <span aria-hidden="true">
+      ↗
+     </span>
+    </a>
+    <a class="experiment" href="https://usamahmoin.github.io/Radio-Wave-Data-Visualizer/">
+     <div>
+      <h3>
+       Radio Wave Data Visualizer
+      </h3>
+      <p>
+       Explore radio wave data in an interactive interface.
+      </p>
+     </div>
+     <span aria-hidden="true">
+      ↗
+     </span>
+    </a>
+    <a class="experiment" href="https://usamahmoin.github.io/NBA-Position-Classifier/">
+     <div>
+      <h3>
+       NBA Position Classifier
+      </h3>
+      <p>
+       Explore basketball player position classification.
+      </p>
+     </div>
+     <span aria-hidden="true">
+      ↗
+     </span>
+    </a>
+    <a class="experiment" href="https://usamahmoin.github.io/Two-Phase-Commit-Protocol/">
+     <div>
+      <h3>
+       Two-Phase Commit Protocol
+      </h3>
+      <p>
+       A visual exploration of distributed transactions.
+      </p>
+     </div>
+     <span aria-hidden="true">
+      ↗
+     </span>
+    </a>
+    <a class="experiment" href="https://usamahmoin.github.io/Vector-Clocks/">
+     <div>
+      <h3>
+       Vector Clocks
+      </h3>
+      <p>
+       Explore event ordering in distributed systems.
+      </p>
+     </div>
+     <span aria-hidden="true">
+      ↗
+     </span>
+    </a>
+    <a class="experiment" href="https://usamahmoin.github.io/TF-IDF-Document-Search-Visualizer/">
+     <div>
+      <h3>
+       TF-IDF Document Search
+      </h3>
+      <p>
+       Explore document search and term weighting.
+      </p>
+     </div>
+     <span aria-hidden="true">
+      ↗
+     </span>
+    </a>
+   </section>
+   <section class="contact-section" id="contact">
+    <div>
+     <p class="eyebrow">
+      LET’S CONNECT
+     </p>
+     <h2>
+      Have something
+      <br/>
+      in mind?
+     </h2>
+    </div>
+    <div class="contact-copy">
+     <p>
+      For conversations about applied AI, thoughtful software, or computer science education.
+     </p>
+     <a class="text-link" href="mailto:uxm0937@mavs.uta.edu">
+      uxm0937@mavs.uta.edu
+      <span aria-hidden="true">
+       ↗
+      </span>
+     </a>
+     <div class="socials">
+      <a href="https://github.com/UsamahMoin">
+       GitHub ↗
+      </a>
+      <a href="https://www.linkedin.com/in/usamahmoinmohammed/">
+       LinkedIn ↗
+      </a>
+      <a href="https://medium.com/@usamahmoin">
+       Medium ↗
+      </a>
+     </div>
+    </div>
+   </section>
+  </main>
+ </body>
 </html>
